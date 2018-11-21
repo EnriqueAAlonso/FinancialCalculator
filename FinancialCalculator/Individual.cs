@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace FinancialCalculator
 {
-    public partial class Form1 : Form
+    public partial class Individual : Form
     {
-        public Form1()
+        public Individual()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

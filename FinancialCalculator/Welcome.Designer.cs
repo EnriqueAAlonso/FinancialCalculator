@@ -1,6 +1,6 @@
 ﻿namespace FinancialCalculator
 {
-    partial class Form1
+    partial class Welcome
     {
         /// <summary>
         /// Required designer variable.
