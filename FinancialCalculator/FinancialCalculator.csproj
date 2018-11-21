@@ -66,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Individual.resx">
+      <DependentUpon>Individual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Anexo1.resx">
       <DependentUpon>Anexo1.cs</DependentUpon>
     </EmbeddedResource>
