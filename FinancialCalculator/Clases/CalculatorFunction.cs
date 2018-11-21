@@ -43,6 +43,8 @@ namespace FinancialCalculator.Clases
         {
             return (Math.Pow(1 + (rate / yearlyPeriods), yearlyPeriods) - 1);
         }
+        
+
         //Anexo 3
     }
 }
