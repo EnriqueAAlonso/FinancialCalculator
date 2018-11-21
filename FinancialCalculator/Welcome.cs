@@ -19,7 +19,8 @@ namespace FinancialCalculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Individual individual = new Individual();
+            individual.Show();
         }
     }
 }
