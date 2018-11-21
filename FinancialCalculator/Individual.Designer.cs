@@ -28,12 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.anexo11 = new FinancialCalculator.UserControls.Anexo1();
+            this.SuspendLayout();
+            // 
+            // anexo11
+            // 
+            this.anexo11.Location = new System.Drawing.Point(12, 12);
+            this.anexo11.Name = "anexo11";
+            this.anexo11.Size = new System.Drawing.Size(308, 387);
+            this.anexo11.TabIndex = 0;
+            // 
+            // Individual
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.anexo11);
+            this.Name = "Individual";
             this.Text = "Individual";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private UserControls.Anexo1 anexo11;
     }
 }
