@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinancialCalculator.Clases;
+
 enum OperationType { FuturoDadoP, PresenteDadoF, FuturoDadoA, AnualidadDadoF, PresenteDadoA, AnualidadDadoP,IEF }
 namespace FinancialCalculator.UserControls
 {

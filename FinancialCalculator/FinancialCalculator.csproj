@@ -52,6 +52,12 @@
     <Compile Include="UserControls\Anexo1.Designer.cs">
       <DependentUpon>Anexo1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ExcelView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ExcelView.Designer.cs">
+      <DependentUpon>ExcelView.cs</DependentUpon>
+    </Compile>
     <Compile Include="Welcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\Anexo1.resx">
       <DependentUpon>Anexo1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ExcelView.resx">
+      <DependentUpon>ExcelView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
