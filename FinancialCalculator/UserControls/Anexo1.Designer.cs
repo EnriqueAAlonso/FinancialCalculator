@@ -44,83 +44,92 @@
             // 
             // Selection
             // 
-            this.Selection.Location = new System.Drawing.Point(28, 31);
+            this.Selection.Location = new System.Drawing.Point(37, 38);
+            this.Selection.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Selection.Name = "Selection";
-            this.Selection.Size = new System.Drawing.Size(121, 21);
+            this.Selection.Size = new System.Drawing.Size(160, 24);
             this.Selection.TabIndex = 0;
             this.Selection.SelectedIndexChanged += new System.EventHandler(this.Selection_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 15);
+            this.label1.Location = new System.Drawing.Point(33, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 13);
+            this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Operación";
             // 
             // PeriodBox
             // 
-            this.PeriodBox.Location = new System.Drawing.Point(28, 95);
+            this.PeriodBox.Location = new System.Drawing.Point(37, 117);
+            this.PeriodBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PeriodBox.Name = "PeriodBox";
-            this.PeriodBox.Size = new System.Drawing.Size(120, 20);
+            this.PeriodBox.Size = new System.Drawing.Size(160, 22);
             this.PeriodBox.TabIndex = 2;
             this.PeriodBox.ValueChanged += new System.EventHandler(this.PeriodBox_ValueChanged);
             // 
             // interest
             // 
-            this.interest.Location = new System.Drawing.Point(29, 152);
+            this.interest.Location = new System.Drawing.Point(39, 187);
+            this.interest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.interest.Name = "interest";
-            this.interest.Size = new System.Drawing.Size(120, 20);
+            this.interest.Size = new System.Drawing.Size(160, 22);
             this.interest.TabIndex = 3;
             this.interest.ValueChanged += new System.EventHandler(this.interest_ValueChanged);
             // 
             // InputValue
             // 
             this.InputValue.DecimalPlaces = 2;
-            this.InputValue.Location = new System.Drawing.Point(29, 216);
+            this.InputValue.Location = new System.Drawing.Point(39, 266);
+            this.InputValue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.InputValue.Maximum = new decimal(new int[] {
             10000000,
             0,
             0,
             0});
             this.InputValue.Name = "InputValue";
-            this.InputValue.Size = new System.Drawing.Size(120, 20);
+            this.InputValue.Size = new System.Drawing.Size(160, 22);
             this.InputValue.TabIndex = 4;
             this.InputValue.ValueChanged += new System.EventHandler(this.InputValue_ValueChanged);
             // 
             // periodLabel
             // 
             this.periodLabel.AutoSize = true;
-            this.periodLabel.Location = new System.Drawing.Point(26, 79);
+            this.periodLabel.Location = new System.Drawing.Point(35, 97);
+            this.periodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.periodLabel.Name = "periodLabel";
-            this.periodLabel.Size = new System.Drawing.Size(105, 13);
+            this.periodLabel.Size = new System.Drawing.Size(138, 17);
             this.periodLabel.TabIndex = 5;
             this.periodLabel.Text = "Número de Períodos";
             // 
             // interestLabel
             // 
             this.interestLabel.AutoSize = true;
-            this.interestLabel.Location = new System.Drawing.Point(26, 136);
+            this.interestLabel.Location = new System.Drawing.Point(35, 167);
+            this.interestLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.interestLabel.Name = "interestLabel";
-            this.interestLabel.Size = new System.Drawing.Size(56, 13);
+            this.interestLabel.Size = new System.Drawing.Size(77, 17);
             this.interestLabel.TabIndex = 6;
             this.interestLabel.Text = "Interés (%)";
             // 
             // mainValueLabel
             // 
             this.mainValueLabel.AutoSize = true;
-            this.mainValueLabel.Location = new System.Drawing.Point(26, 200);
+            this.mainValueLabel.Location = new System.Drawing.Point(35, 246);
+            this.mainValueLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.mainValueLabel.Name = "mainValueLabel";
-            this.mainValueLabel.Size = new System.Drawing.Size(76, 13);
+            this.mainValueLabel.Size = new System.Drawing.Size(102, 17);
             this.mainValueLabel.TabIndex = 7;
             this.mainValueLabel.Text = "Valor Presente";
             // 
             // calculate
             // 
-            this.calculate.Location = new System.Drawing.Point(29, 274);
+            this.calculate.Location = new System.Drawing.Point(99, 296);
+            this.calculate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.calculate.Name = "calculate";
-            this.calculate.Size = new System.Drawing.Size(75, 23);
+            this.calculate.Size = new System.Drawing.Size(100, 28);
             this.calculate.TabIndex = 8;
             this.calculate.Text = "Calcular";
             this.calculate.UseVisualStyleBackColor = true;
@@ -128,7 +137,7 @@
             // 
             // Anexo1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.calculate);
             this.Controls.Add(this.mainValueLabel);
@@ -139,8 +148,9 @@
             this.Controls.Add(this.PeriodBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Selection);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Anexo1";
-            this.Size = new System.Drawing.Size(308, 387);
+            this.Size = new System.Drawing.Size(290, 375);
             ((System.ComponentModel.ISupportInitialize)(this.PeriodBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.interest)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.InputValue)).EndInit();
