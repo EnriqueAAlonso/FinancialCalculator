@@ -31,10 +31,10 @@
             this.anexo11 = new FinancialCalculator.UserControls.Anexo1();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +46,6 @@
             this.anexo11.Name = "anexo11";
             this.anexo11.Size = new System.Drawing.Size(372, 356);
             this.anexo11.TabIndex = 0;
-            this.anexo11.Load += new System.EventHandler(this.anexo11_Load_1);
             // 
             // panel1
             // 
@@ -69,25 +68,13 @@
             this.panel2.Size = new System.Drawing.Size(206, 82);
             this.panel2.TabIndex = 2;
             // 
-            // panel3
+            // panel4
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(150)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(206, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 82);
-            this.panel3.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.label1.Location = new System.Drawing.Point(31, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 34);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Calculos";
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(150)))));
+            this.panel4.Location = new System.Drawing.Point(3, 81);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 2);
+            this.panel4.TabIndex = 11;
             // 
             // label3
             // 
@@ -100,13 +87,25 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Individuales";
             // 
-            // panel4
+            // label1
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(150)))));
-            this.panel4.Location = new System.Drawing.Point(3, 81);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 2);
-            this.panel4.TabIndex = 11;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.label1.Location = new System.Drawing.Point(33, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 34);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Calculos";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(150)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(206, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(434, 82);
+            this.panel3.TabIndex = 3;
             // 
             // Individual
             // 

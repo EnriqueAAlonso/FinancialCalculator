@@ -16,15 +16,5 @@ namespace FinancialCalculator
         {
             InitializeComponent();
         }
-
-        private void anexo11_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void anexo11_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
