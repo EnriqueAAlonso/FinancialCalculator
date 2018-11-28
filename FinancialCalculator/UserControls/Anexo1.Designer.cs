@@ -49,6 +49,7 @@
             this.Selection.Name = "Selection";
             this.Selection.Size = new System.Drawing.Size(160, 24);
             this.Selection.TabIndex = 0;
+            this.Selection.Visible = false;
             this.Selection.SelectedIndexChanged += new System.EventHandler(this.Selection_SelectedIndexChanged);
             // 
             // label1
@@ -60,6 +61,7 @@
             this.label1.Size = new System.Drawing.Size(74, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Operación";
+            this.label1.Visible = false;
             // 
             // PeriodBox
             // 
@@ -131,10 +133,10 @@
             // 
             this.calculate.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.calculate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calculate.Location = new System.Drawing.Point(75, 286);
+            this.calculate.Location = new System.Drawing.Point(63, 288);
             this.calculate.Margin = new System.Windows.Forms.Padding(4);
             this.calculate.Name = "calculate";
-            this.calculate.Size = new System.Drawing.Size(149, 38);
+            this.calculate.Size = new System.Drawing.Size(214, 38);
             this.calculate.TabIndex = 8;
             this.calculate.Text = "Calcular";
             this.calculate.UseVisualStyleBackColor = true;
