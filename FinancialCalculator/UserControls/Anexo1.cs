@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinancialCalculator.Clases;
+using System.Diagnostics;
 
 enum OperationType { FuturoDadoP, PresenteDadoF, FuturoDadoA, AnualidadDadoF, PresenteDadoA, AnualidadDadoP,IEF, Anexo2}
 namespace FinancialCalculator.UserControls
@@ -67,8 +68,8 @@ namespace FinancialCalculator.UserControls
                     InputValue.Hide();
                     break;
                 case OperationType.Anexo2:
-                     Anexo2 anex= new Anexo2();
-                     anex.Show();
+                    ProcessStartInfo sInfo = new ProcessStartInfo("https://docs.google.com/spreadsheets/d/1bbsOpwuWvY_DhMl5TsN7G4nb4I8fVWl04Gez-mAAW5o/edit#gid=1130947443");
+                    Process.Start(sInfo);
                     break;
                 default:
                     Mode = OperationType.FuturoDadoP;

@@ -33,10 +33,11 @@
             // 
             // excelView1
             // 
-            this.excelView1.Location = new System.Drawing.Point(0, 0);
+            this.excelView1.Location = new System.Drawing.Point(3, 3);
             this.excelView1.Name = "excelView1";
             this.excelView1.Size = new System.Drawing.Size(701, 642);
             this.excelView1.TabIndex = 0;
+            this.excelView1.UseWaitCursor = true;
             // 
             // Anexo2
             // 
