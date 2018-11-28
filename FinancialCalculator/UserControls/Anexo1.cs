@@ -159,23 +159,23 @@ namespace FinancialCalculator.UserControls
                     output = "El Valor Futuro";
                     break;
                 case 2:
-                    result=calc.FutureGivenPayment(Period, MainValue, inter);
-                    output = "El Valor Futuro";
+                    result=calc.PresentGivenFuture(Period, MainValue, inter);
+                    output = "El Valor Presente";
                     break;
                 case 3:
-                    result= calc.PresentGivenPayment(Period, MainValue, inter);
-                    output = "El Valor Presente";
+                    result= calc.FutureGivenPayment(Period, MainValue, inter);
+                    output = "El Valor Futuro";
                     break;
                 case 4:
-                    result = calc.PresentGivenFuture(Period, MainValue, inter);
-                    output = "El Valor Presente";
-                    break;
-                case 5:
                     result = calc.PaymentGivenFuture(Period, MainValue, inter);
                     output = "La Anualidad";
                     break;
+                case 5:
+                    result = calc.PresentGivenPayment(Period, MainValue, inter);
+                    output = "El Valor Presente";
+                    break;
                 case 6:
-                    result = calc.PaymentGivenFuture(Period, MainValue, inter);
+                    result = calc.PaymentGivenPresent(Period, MainValue, inter);
                     output = "La Anualidad";
                     break;
                 case 10:

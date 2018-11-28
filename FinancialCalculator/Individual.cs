@@ -66,29 +66,9 @@ namespace FinancialCalculator
             anexo11.Update(6);
         }
 
-        private void P_G_Click(object sender, EventArgs e)
-        {
-            sideP.Height = P_G.Height;
-            sideP.Top = P_G.Top;
-            CalculatorFunction.Status = 7;
-            anexo11.Update(7);
-        }
+        
 
-        private void A_G_Click(object sender, EventArgs e)
-        {
-            sideP.Height = A_G.Height;
-            sideP.Top = A_G.Top;
-            CalculatorFunction.Status = 8;
-            anexo11.Update(8);
-        }
-
-        private void F_G_Click(object sender, EventArgs e)
-        {
-            sideP.Height = F_G.Height;
-            sideP.Top = F_G.Top;
-            CalculatorFunction.Status = 9;
-            anexo11.Update(9);
-        }
+        
 
         private void IEF_btn_Click(object sender, EventArgs e)
         {
