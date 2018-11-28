@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace FinancialCalculator
 {
@@ -82,8 +83,8 @@ namespace FinancialCalculator
         {
             sideP.Height = AnexoDos_btn.Height;
             sideP.Top = AnexoDos_btn.Top;
-            CalculatorFunction.Status = 11;
-            anexo11.Update(11);
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://docs.google.com/spreadsheets/d/1bbsOpwuWvY_DhMl5TsN7G4nb4I8fVWl04Gez-mAAW5o/edit#gid=1130947443");
+            Process.Start(sInfo);
         }
     }
 }
