@@ -92,7 +92,7 @@ namespace FinancialCalculator.UserControls
                     InputValue.Show();
                     break;
                 case 2:
-                    mainValueLabel.Text = "Anualidad";
+                    mainValueLabel.Text = "Valor Futuro";
                     mainValueLabel.Show();
                     InputValue.Show();
                     break;
@@ -114,7 +114,7 @@ namespace FinancialCalculator.UserControls
                 case 6:
                     mainValueLabel.Show();
                     InputValue.Show();
-                    mainValueLabel.Text = "Anualidad";
+                    mainValueLabel.Text = "Valor Presente";
                     break;
                 case 10:
                     mainValueLabel.Hide();
