@@ -179,16 +179,26 @@ namespace FinancialCalculator.UserControls
                     output = "La Anualidad";
                     break;
                 case 10:
-                    result = calc.IEF(inter, Period);
+                    result = calc.IEF(inter, Period)*100;
                     output = "El interés efectivo";
                     break;
                 default:
                     break;
                     
             }
-
-            result = Math.Round(result, 2);
-            MessageBox.Show(output + " es " + result.ToString());
+            Period = Convert.ToInt32(PeriodBox.Value);
+            inter = Convert.ToDouble(interest.Value / 100);
+            MainValue = Convert.ToDouble(InputValue.Value);
+            if (CalculatorFunction.Status == 10)
+            {
+                result = Math.Round(result, 2);
+                MessageBox.Show(output + " es " + result.ToString()+"%");
+            }
+            else
+            {
+                result = Math.Round(result, 2);
+                MessageBox.Show(output + " es " + result.ToString());
+            }
 
         }
     }

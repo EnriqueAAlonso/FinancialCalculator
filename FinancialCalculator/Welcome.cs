@@ -28,6 +28,7 @@ namespace FinancialCalculator
         {
             ProcessStartInfo sInfo = new ProcessStartInfo("https://docs.google.com/spreadsheets/d/1chLIX9fT_ulpqUw88UZCEZxWQxpIAjvOfPKSiKeNZQk/edit#gid=0");
             Process.Start(sInfo);
+            
         }
     }
 }
