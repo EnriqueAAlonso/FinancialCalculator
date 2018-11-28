@@ -27,6 +27,7 @@ namespace FinancialCalculator.UserControls
             Selection.DataSource = Enum.GetValues(typeof(OperationType)).Cast<OperationType>();
         }
 
+        // ESTE YA NO SE USA, AHORA SE USAN LOS BOTONES, LO DEJE POR MIEDO JAJA
         private void Selection_SelectedIndexChanged(object sender, EventArgs e)
         {//Translation fo the selection of the user
            Enum.TryParse<OperationType>(Selection.SelectedValue.ToString(), out Mode);
@@ -80,6 +81,55 @@ namespace FinancialCalculator.UserControls
 
         }
 
+        public void Update(int status)
+        {
+            switch (status)
+            {
+                case 1:
+                    mainValueLabel.Text = "Valor Presente";
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+                case 2:
+                    mainValueLabel.Text = "Anualidad";
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+                case 3:
+                    mainValueLabel.Text = "Anualidad";
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+                case 4:
+                    mainValueLabel.Text = "Valor Futuro";
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+                case 5:
+                    mainValueLabel.Text = "Anualidad";
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+                case 6:
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    mainValueLabel.Text = "Anualidad";
+                    break;
+                case 10:
+                    mainValueLabel.Hide();
+                    InputValue.Hide();
+                    break;
+                case 11:
+                    Anexo2 anex = new Anexo2();
+                    anex.Show();
+                    break;
+                default:
+                    Mode = OperationType.FuturoDadoP;
+                    mainValueLabel.Show();
+                    InputValue.Show();
+                    break;
+            }
+        }
         private void PeriodBox_ValueChanged(object sender, EventArgs e)
         {   //Storage of the number of periods selected
             Period = Convert.ToInt32(PeriodBox.Value);
@@ -101,33 +151,33 @@ namespace FinancialCalculator.UserControls
         {
             string output = "Valor Futuro";
             double result=0;
-            switch (Mode)
+            switch (CalculatorFunction.Status)
             {
-                case OperationType.FuturoDadoP:
+                case 1:
                     result = calc.FutureGivenPresent(Period,MainValue,inter);
                     output = "El Valor Futuro";
                     break;
-                case OperationType.FuturoDadoA:
+                case 2:
                     result=calc.FutureGivenPayment(Period, MainValue, inter);
                     output = "El Valor Futuro";
                     break;
-                case OperationType.PresenteDadoA:
+                case 3:
                     result= calc.PresentGivenPayment(Period, MainValue, inter);
                     output = "El Valor Presente";
                     break;
-                case OperationType.PresenteDadoF:
+                case 4:
                     result = calc.PresentGivenFuture(Period, MainValue, inter);
                     output = "El Valor Presente";
                     break;
-                case OperationType.AnualidadDadoF:
+                case 5:
                     result = calc.PaymentGivenFuture(Period, MainValue, inter);
                     output = "La Anualidad";
                     break;
-                case OperationType.AnualidadDadoP:
+                case 6:
                     result = calc.PaymentGivenFuture(Period, MainValue, inter);
                     output = "La Anualidad";
                     break;
-                case OperationType.IEF:
+                case 10:
                     result = calc.IEF(inter, Period);
                     output = "El interés efectivo";
                     break;

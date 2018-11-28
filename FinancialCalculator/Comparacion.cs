@@ -16,5 +16,10 @@ namespace FinancialCalculator
         {
             InitializeComponent();
         }
+
+        private void compare1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

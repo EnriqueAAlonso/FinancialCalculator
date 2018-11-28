@@ -34,16 +34,19 @@
             // compare1
             // 
             this.compare1.Location = new System.Drawing.Point(0, 0);
+            this.compare1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.compare1.Name = "compare1";
-            this.compare1.Size = new System.Drawing.Size(1196, 698);
+            this.compare1.Size = new System.Drawing.Size(1595, 859);
             this.compare1.TabIndex = 0;
+            this.compare1.Load += new System.EventHandler(this.compare1_Load);
             // 
             // Comparacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1190, 693);
+            this.ClientSize = new System.Drawing.Size(1587, 853);
             this.Controls.Add(this.compare1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Comparacion";
             this.Text = "Comparacion";
             this.ResumeLayout(false);

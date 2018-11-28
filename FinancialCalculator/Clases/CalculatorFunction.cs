@@ -9,6 +9,8 @@ namespace FinancialCalculator.Clases
 {
     class CalculatorFunction
     {
+        public static int Status { get; set; }
+
         //Anexo 1
         public double FutureGivenPresent(int numberOfPeriods, double presentValue, double interest)
         {
