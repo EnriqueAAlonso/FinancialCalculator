@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace FinancialCalculator
@@ -25,8 +26,8 @@ namespace FinancialCalculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Comparacion comp = new Comparacion();
-            comp.Show();
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://docs.google.com/spreadsheets/d/1chLIX9fT_ulpqUw88UZCEZxWQxpIAjvOfPKSiKeNZQk/edit#gid=0");
+            Process.Start(sInfo);
         }
     }
 }
