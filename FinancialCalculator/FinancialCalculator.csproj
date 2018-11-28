@@ -45,7 +45,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anexo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anexo2.Designer.cs">
+      <DependentUpon>Anexo2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Clases\CalculatorFunction.cs" />
+    <Compile Include="Comparacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Comparacion.Designer.cs">
+      <DependentUpon>Comparacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Compare.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Compare.Designer.cs">
+      <DependentUpon>Compare.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Anexo1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +90,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Anexo2.resx">
+      <DependentUpon>Anexo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Comparacion.resx">
+      <DependentUpon>Comparacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Compare.resx">
+      <DependentUpon>Compare.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Individual.resx">
       <DependentUpon>Individual.cs</DependentUpon>
     </EmbeddedResource>

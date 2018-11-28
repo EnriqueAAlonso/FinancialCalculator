@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FinancialCalculator.Clases;
 
-enum OperationType { FuturoDadoP, PresenteDadoF, FuturoDadoA, AnualidadDadoF, PresenteDadoA, AnualidadDadoP,IEF }
+enum OperationType { FuturoDadoP, PresenteDadoF, FuturoDadoA, AnualidadDadoF, PresenteDadoA, AnualidadDadoP,IEF, Anexo2}
 namespace FinancialCalculator.UserControls
 {
     public partial class Anexo1 : UserControl
@@ -65,6 +65,10 @@ namespace FinancialCalculator.UserControls
                 case OperationType.IEF:
                     mainValueLabel.Hide();
                     InputValue.Hide();
+                    break;
+                case OperationType.Anexo2:
+                     Anexo2 anex= new Anexo2();
+                     anex.Show();
                     break;
                 default:
                     Mode = OperationType.FuturoDadoP;
