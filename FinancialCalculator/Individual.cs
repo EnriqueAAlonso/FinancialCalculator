@@ -24,6 +24,7 @@ namespace FinancialCalculator
             sideP.Height = F_P.Height;
             sideP.Top = F_P.Top;
             CalculatorFunction.Status = 1;
+            modeTitle.Text = "Valor futuro (F/P)";
             anexo11.Update(1);
         }
 
@@ -32,6 +33,7 @@ namespace FinancialCalculator
             sideP.Height = P_F.Height;
             sideP.Top = P_F.Top;
             CalculatorFunction.Status = 2;
+            modeTitle.Text = "Valor presente (P/F)";
             anexo11.Update(2);
         }
 
@@ -40,6 +42,7 @@ namespace FinancialCalculator
             sideP.Height = F_A.Height;
             sideP.Top = F_A.Top;
             CalculatorFunction.Status = 3;
+            modeTitle.Text = "Valor futuro (F/A)";
             anexo11.Update(3);
         }
 
@@ -48,6 +51,7 @@ namespace FinancialCalculator
             sideP.Height = A_F.Height;
             sideP.Top = A_F.Top;
             CalculatorFunction.Status = 4;
+            modeTitle.Text = "Fondo de amortización (A/F)";
             anexo11.Update(4);
         }
 
@@ -56,6 +60,7 @@ namespace FinancialCalculator
             sideP.Height = P_A.Height;
             sideP.Top = P_A.Top;
             CalculatorFunction.Status = 5;
+            modeTitle.Text = "Valor presente (P/A)";
             anexo11.Update(5);
         }
 
@@ -64,18 +69,16 @@ namespace FinancialCalculator
             sideP.Height = A_P.Height;
             sideP.Top = A_P.Top;
             CalculatorFunction.Status = 6;
+            modeTitle.Text = "Recuperación de capital (A/P)";
             anexo11.Update(6);
         }
-
         
-
-        
-
         private void IEF_btn_Click(object sender, EventArgs e)
         {
             sideP.Height = IEF_btn.Height;
             sideP.Top = IEF_btn.Top;
             CalculatorFunction.Status = 10;
+            modeTitle.Text = "Interés Efectivo (IEF)";
             anexo11.Update(10);
         }
 
