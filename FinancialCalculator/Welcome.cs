@@ -22,5 +22,11 @@ namespace FinancialCalculator
             Individual individual = new Individual();
             individual.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Comparacion comp = new Comparacion();
+            comp.Show();
+        }
     }
 }

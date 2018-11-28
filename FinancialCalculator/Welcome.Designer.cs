@@ -56,6 +56,7 @@
             this.myTips.SetToolTip(this.button2, "En esta sección se tendrá la posibilidad de comparar el rendimiento de varios pla" +
         "nes financieros.");
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // lblWelcome
             // 
