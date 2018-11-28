@@ -39,7 +39,8 @@
             this.webBrowser1.Name = "webBrowser1";
             this.webBrowser1.Size = new System.Drawing.Size(701, 642);
             this.webBrowser1.TabIndex = 0;
-            this.webBrowser1.Url = new System.Uri("https://en.wikipedia.org/wiki/Apple_II", System.UriKind.Absolute);
+            this.webBrowser1.Url = new System.Uri("https://docs.google.com/spreadsheets/d/1bbsOpwuWvY_DhMl5TsN7G4nb4I8fVWl04Gez-mAAW" +
+        "5o/edit#gid=1130947443", System.UriKind.Absolute);
             // 
             // ExcelView
             // 
